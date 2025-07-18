@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数绘文产·2024</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 引入外部库 -->
+    <script src="lib/d3.v7.min.js"></script>
+    <script src="lib/three.min.js"></script>
+</head>
+<body>
+    <h1 class="main-title">数绘文产·2024</h1>
+    <div class="signature">22计传张颖惠｜22计传刘竹</div>
+    
+    <div class="dashboard-container">
+        <!-- 产业概览 -->
+        <div class="section full-width" id="industry-overview-section">
+            <h2 class="section-title">一、产业概览</h2>
+            <div id="industry-overview" class="chart-container"></div>
+        </div>
+        
+        <!-- 行业分布 -->
+        <div class="section full-width">
+            <h2 class="section-title">二、行业分布</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div id="radar-chart-container" class="section">
+                    <div id="radar-chart" class="chart-container" style="height: 500px;"></div>
+                </div>
+                <div id="industry-donut-container" class="section">
+                    <div id="industry-donut" class="chart-container" style="height: 500px;"></div>
+                </div>
+                <div id="industry-histogram-container" class="section">
+                    <div id="industry-histogram" class="chart-container" style="height: 500px;"></div>
+                </div>
+                <div id="industry-trend-container" class="section">
+                    <div id="industry-trend" class="chart-container" style="height: 500px;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 结构分析 -->
+        <div class="section full-width">
+            <h2 class="section-title">三、结构分析</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div id="force-graph-container" class="section">
+                    <div id="force-graph" class="chart-container" style="height: 500px;"></div>
+                </div>
+                <div id="ownership-donut-container" class="section">
+                    <div id="ownership-donut" class="chart-container" style="height: 500px;"></div>
+                </div>
+                <div id="structure-trend-container" class="section">
+                    <div id="structure-trend" class="chart-container" style="height: 500px;"></div>
+                </div>
+                <div id="enterprise-size-container" class="section">
+                    <div id="enterprise-size" class="chart-container" style="height: 500px;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 区域对比 -->
+        <div class="section full-width">
+            <h2 class="section-title">四、区域对比</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div id="regional-map-container" class="section">
+                    <div id="regional-map" class="chart-container" style="height: 600px;"></div>
+                </div>
+                <div id="3d-chart-container" class="section">
+                    <div id="3d-chart" class="chart-container" style="height: 600px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 加载各模块脚本 -->
+    <script src="js/overview.js"></script>
+    <script src="js/radar.js"></script>
+    <script src="js/industry-donut.js"></script>
+    <script src="js/industry-histogram.js"></script>
+    <script src="js/industry-trend.js"></script>
+    <script src="js/force-graph.js"></script>
+    <script src="js/ownership-donut.js"></script>
+    <script src="js/structure-trend.js"></script>
+    <script src="js/enterprise-size.js"></script>
+    <script src="js/regional-map.js"></script>
+    <script src="js/3d-chart.js"></script>
+</body>
+</html>
